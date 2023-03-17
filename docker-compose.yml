@@ -1,0 +1,12 @@
+﻿version: '3.8'
+services:
+  rabbitmq:
+    image: masstransit/rabbitmq:latest
+    ports:
+      - 5672:5672
+      - 15672:15672
+  redis:
+    image: redis/redis-stack:latest
+    ports:
+      - 6379:6379
+      - 8001:8001
